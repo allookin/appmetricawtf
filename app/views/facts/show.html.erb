@@ -1,0 +1,21 @@
+<div class="container" style="margin: 50px auto;">
+    <div class="row">
+    <div class="pull-left" style="margin-right: 50px; margin-bottom: 20px;">
+        <img src="https://yastatic.net/mobmet/1.7.2.9/blocks/desktop/promo/__icon/metrika-icon.png">
+        <h1>Fact #<%= @fact.number %></h1>
+    </div>
+    <div class="pull-left">
+        <small><%= @fact.udate %></small>
+        <p>
+          <h3>W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly revi</h3>
+        </p>
+    </div>
+    </div>
+    <div class="pull-right">
+        <h5>
+        <%= link_to 'Prev', edit_fact_path(@fact) %> |
+        <%= link_to 'Random', facts_path %> | 
+        <%= link_to 'Next', facts_path %>
+        </h5>
+    </div>
+</div>
